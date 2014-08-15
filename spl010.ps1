@@ -1,5 +1,8 @@
-﻿function spl010 {
-  Param([string]$inFile)
+﻿#
+# utf-8のテキストファイルを読み込み、一行ごとに処理する
+#
+function spl010 {
+  Param([string]$inFile)	# 入力ファイル
 	$i=1
 	$enc = [Text.Encoding]::GetEncoding("utf-8")
 	try {
