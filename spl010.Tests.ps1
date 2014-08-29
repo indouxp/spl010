@@ -16,6 +16,9 @@ function RemoveTextFile {
 	Remove-Item $textfile -force
 }
 
+#
+# 読み込み付加のファイルを作成
+#
 function DenyRead {
 	Param([string] $file)
 	$hostname = hostname
